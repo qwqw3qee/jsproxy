@@ -40,6 +40,7 @@
     <span>切换线路:</span>
     <select id="selNode"></select>
   </div>
+  <p>推荐站点</p>
   <div class="box" id="list">
   </div>
   <script>
@@ -105,7 +106,6 @@
       conf.node_default = node
       sendMsgToSw(PAGE_CONF_SET, conf)
     }
-
     function sendMsgToSw(cmd, val) {
       const ctl = sw.controller
       if (!ctl) {
@@ -114,7 +114,6 @@
       }
       ctl.postMessage([cmd, val])
     }
-    <h3>推荐站点：</h3>
     const SITE_LIST = [
       ['google', ''],
       ['youtube', ''],
