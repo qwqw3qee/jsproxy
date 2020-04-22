@@ -12,20 +12,20 @@ jsproxy_config({
 
   // 节点配置
   node_map: {
- //   'demo-hk': {
- //     label: '演示服务-香港节点',
- //     lines: {
- //       // 主机:权重
- //       'node-aliyun-hk-1.etherdream.com:8443': 1,
- //       'node-aliyun-hk-2.etherdream.com:8443': 2,
- //     }
- //   },
- //   'demo-sg': {
- //     label: '演示服务-新加坡节点',
- //     lines: {
- //       'node-aliyun-sg.etherdream.com:8443': 1,
- //     },
-//    },
+    'demo-hk': {
+      label: '演示服务-香港节点',
+      lines: {
+        // 主机:权重
+        'node-aliyun-hk-1.etherdream.com:8443': 1,
+        'node-aliyun-hk-2.etherdream.com:8443': 2,
+      }
+    },
+    'demo-sg': {
+      label: '演示服务-新加坡节点',
+      lines: {
+        'node-aliyun-sg.etherdream.com:8443': 1,
+      },
+    },
     'mysite': {
       label: '当前站点',
       lines: {
@@ -88,7 +88,7 @@ jsproxy_config({
     'https://www.baidu.com/img/baidu_resultlogo@2.png': {
       replace: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png'
     },
-    'http://www.pronhub.com/': {
+    'https://www.pronhub.com/': {
       content: '文明上网，从我做起'
     },
     'http://haha.com/': {
